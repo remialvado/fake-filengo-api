@@ -1,0 +1,27 @@
+filengo_api_account_create:
+    path:     /api/v1/account
+    defaults:
+        _controller: filengo.account.controller:createAccount
+        _format: json
+    methods: [POST]
+
+filengo_api_account_update:
+    path:     /api/v1/account/{token}
+    defaults:
+        _controller: filengo.account.controller:updateAccount
+        _format: json
+    methods: [PUT]
+
+filengo_api_rules:
+    path:     /api/v1/next-info/{token}
+    defaults:
+        _controller: filengo.rules.controller:getNextInfo
+        _format: json
+    methods: [GET]
+
+filengo_api_financial_support:
+    path:     /api/v1/financial-services/{token}
+    defaults:
+        _controller: filengo.rules.controller:getAvailableFinancialServices
+        _format: json
+    methods: [GET]

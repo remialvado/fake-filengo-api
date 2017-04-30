@@ -1,0 +1,60 @@
+# Cache and logs
+/app/cache/*
+/app/logs/*
+/app/content/*
+/app/proc
+/app/csv-extract
+!app/cache/.gitkeep
+!app/logs/.gitkeep
+/app/spool/*
+/cron/logs/*
+.sass-cache
+/app/tmp/*
+
+# Parameters
+#/app/config/parameters.yml
+/app/config/parameters.ini
+
+# Managed by Composer
+/app/bootstrap.php.cache
+/bin/*
+!bin/console
+/vendor/
+
+/var/bootstrap.php.cache
+/var/cache/*
+/var/logs/*
+!var/cache/.gitkeep
+!var/logs/.gitkeep
+
+# Assets and user uploads
+/web/bundles/
+/web/uploads/
+/web/assetic/
+/web/media/
+/web/css/
+/web/js/
+/web/sitemap/*
+/web/new_sitemap/*
+
+# PHPUnit
+/app/phpunit.xml
+
+# Composer PHAR
+composer.phar
+
+/build/
+node_modules
+.DS_Store
+/.idea/
+/logs/
+/components/
+.htaccess
+'.htaccess'
+.htpasswd
+profiles.txt
+!web/.htaccess
+!web/.htpasswd
+bower_components
+npm-debug.log
+rev-manifest.json
